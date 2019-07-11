@@ -4,6 +4,8 @@ const path = require('path');
 const exphbs = require('express-handlebars');
 // Inicializar servidor
 const app = express();
+//El archivo de la base de datos
+require('./database');
 
 //Configuraciones
     //Configuraciondo el puerto
@@ -20,12 +22,15 @@ app.set('port',process.env.PORT || 3000);
     }));
     app.set('view engine', '.hbs');
 
-    
+
 //Varibles Globales
 
 //routes
+app.use(require('./routes/index'));
+app.use(require('./routes/users'));
 
 //Archivos estaticos
+app.use(express.static(path.join(__dirname, 'public')));
 
 //Servidor escuchando
 app.listen(app.get('port'),()=>{

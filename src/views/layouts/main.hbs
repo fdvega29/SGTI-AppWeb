@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sistema de Gestión de Tramite Inmueble</title>
+	<!-- Titulo -->
+	<title>Secretaría de Tierras y Hábitat Social</title>
+	 <!-- Charset -->
+    <meta charset="utf-8">
+    <!-- Responsive Metatag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Descripcion y Autor -->
+    <meta name="description" content="Secretaria, Tierras, Habitat, Social, Ministerio, Infraestructura, La Rioja, Argentina ">
+    <meta name="author" content="Secretaria de Tierras y Hábitat Social - Arroyo Walter">
+	<!-- Bootstrap/Jquery/Fontawesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link href="style.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 </head>
 <body>
 
-
+{{> navigation}}
     <main>
-
+        {{{body}}}
     </main>
     
+
+    {{> footer}}
+
+
+    <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/64cc28a4e3.js"></script>
 </body>
 </html>
