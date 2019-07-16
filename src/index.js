@@ -25,12 +25,17 @@ app.set('port',process.env.PORT || 3000);
 
 //Varibles Globales
 
+
+
 //routes
 app.use(require('./routes/index'));
 app.use(require('./routes/users'));
 
 //Archivos estaticos
 app.use(express.static(path.join(__dirname, 'public')));
+//Bootstrap/jquery/popper
+app.use('/css', express.static('css'));
+app.use('/js', express.static('js'));
 
 //Servidor escuchando
 app.listen(app.get('port'),()=>{
