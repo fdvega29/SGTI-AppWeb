@@ -33,9 +33,10 @@ app.use(require('./routes/index'));
 
 //Archivos estaticos
 app.use(express.static(path.join(__dirname, 'public')));
-//Bootstrap/jquery/popper
+//Bootstrap/jquery/popper/img
 app.use('/css', express.static('css'));
 app.use('/js', express.static('js'));
+app.use('/img', express.static('img'));
 
 //Servidor escuchando
 app.listen(app.get('port'),()=>{

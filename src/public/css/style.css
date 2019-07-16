@@ -12,7 +12,7 @@ html, body {
   /* Panel */
   
   #contenedor{
-    background-image: url(img/pattern/stripes-light.png);
+    background-image: url(/img/pattern/pattern1.png);
     background-repeat: repeat;
     padding-top: 10%;
   }
@@ -47,6 +47,7 @@ html, body {
   
   .navbar{
     padding: .8rem;
+
   }
   
   .navbar a span{
@@ -137,7 +138,16 @@ html, body {
     margin-bottom: 1rem;
   }
   
-  
+  /* SignUp*/
+
+  #avatar {
+    padding-top: 10px;
+    width: 20%;
+}
+
+ .panel-body {
+  padding: 25px;
+}
   
   /* Icons */
   
