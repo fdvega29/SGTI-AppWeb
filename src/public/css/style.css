@@ -9,12 +9,14 @@ html, body {
     color: #222;
   }
   
+
+
   /* Panel */
   
   #contenedor{
     background-image: url(/img/pattern/pattern1.png);
     background-repeat: repeat;
-    padding-top: 10%;
+    padding-top: 8%;
   }
   
   .panel-heading{
@@ -42,6 +44,12 @@ html, body {
     color: #e9ecef;  
   }
   
+  /* About */
+
+  #columna{
+    padding-top: 10%;
+  }
+
   
   /* Navbar */
   
@@ -98,13 +106,13 @@ html, body {
   }
   
   .btn-primary{
-    background-color: #87765D;
-    border: 1px solid #87765D;
+    background-color: #c55038;
+    border: 1px solid #c55038;
   }
   
   .btn-primary:hover{
-   background-color: #D4C1A7;
-   border: 1px solid #D4C1A7; 
+   background-color: #bd5e4b;
+   border: 1px solid #bd5e4b; 
   }
   
   .jumbotron{
@@ -268,7 +276,32 @@ html, body {
   
   }
   @media (max-width: 576px) {
-        
+
+  #logoTierras{
+    width: 10%;
+  }
+
+  .navbar span{
+    font-size: 50%;
+  }
+  
+  #slider{
+    padding-top: 10%;
+  }
+    /* SignUp*/
+
+  #avatar {
+    padding-top: 10px;
+    width: 30%;
+  }
+
+  #columna{
+    padding-top: 15%;
+  }
+
+  #contenedor{
+    padding-top: 40%;
+  }
 
   .navbar a span {
       font-size: .6em !important;
