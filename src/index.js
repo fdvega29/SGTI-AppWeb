@@ -29,7 +29,7 @@ app.set('port',process.env.PORT || 3000);
 
 //routes
 app.use(require('./routes/index'));
-app.use(require('./routes/users'));
+
 
 //Archivos estaticos
 app.use(express.static(path.join(__dirname, 'public')));

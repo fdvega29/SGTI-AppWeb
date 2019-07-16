@@ -2,16 +2,33 @@ const express = require('express'); //Requerimos de nuevo express
 const router = express.Router(); //Utilizamos el metodo Router
 
 
-//agregar la ruta index
+//-Agregando las Routes
+
+//index
 router.get('/', (req, res) => {
     res.render('index');
 });
 
-
-//agregar la ruta about
+//About
 router.get('/about', (req, res) => {
     res.render('about');
 });
+
+//Panel
+router.get('/panel', (req, res) => {
+    res.render('panel');
+});
+
+//SignIn
+router.get('/signin', (req,res) => {
+    res.render('signin');
+});
+
+//SignUp
+router.get('/signup', (req,res) => {
+    res.render('signup');
+});
+
 
 
 module.exports = router; //exportar la ruta para poder reutilizarla
