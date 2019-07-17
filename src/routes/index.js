@@ -19,15 +19,6 @@ router.get('/panel', (req, res) => {
     res.render('panel');
 });
 
-//SignIn
-router.get('/signin', (req,res) => {
-    res.render('signin');
-});
-
-//SignUp
-router.get('/signup', (req,res) => {
-    res.render('signup');
-});
 
 
 

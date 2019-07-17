@@ -13,7 +13,7 @@ html, body {
 
   /* Panel */
   
-  #contenedor{
+  #container{
     background-image: url(/img/pattern/pattern1.png);
     background-repeat: repeat;
     padding-top: 8%;
@@ -47,7 +47,7 @@ html, body {
   /* About */
 
   #columna{
-    padding-top: 10%;
+    padding-top: 5%;
   }
 
   
@@ -149,8 +149,8 @@ html, body {
   /* SignUp*/
 
   #avatar {
-    padding-top: 10px;
-    width: 20%;
+    padding-top: 0px;
+    width: 30%;
 }
 
  .panel-body {
@@ -193,7 +193,7 @@ html, body {
   .fa-twitter:hover,
   .fa-youtube:hover,
   .fa-instagram:hover {
-    color: #D4C1A7;
+    color: #bd5e4b;
     cursor: pointer;
   }
   
@@ -243,7 +243,7 @@ html, body {
 
        .carousel-caption {
        
-        top: 45%;
+       
        
       }
   
@@ -286,17 +286,17 @@ html, body {
   }
   
   #slider{
-    padding-top: 10%;
+    
   }
     /* SignUp*/
 
   #avatar {
-    padding-top: 10px;
-    width: 30%;
+    padding-top: 5px;
+    width: 35%;
   }
 
   #columna{
-    padding-top: 15%;
+    padding-top: 5%;
   }
 
   #contenedor{
