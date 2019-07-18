@@ -14,7 +14,7 @@ html, body {
   /* Panel */
   
   #container{
-    background-image: url(/img/pattern/pattern1.png);
+    background-image: url('/img/pattern/pattern1.png') !important;
     background-repeat: repeat;
     padding-top: 8%;
   }
@@ -44,32 +44,54 @@ html, body {
     color: #e9ecef;  
   }
   
-  /* About */
-
-  #columna{
-    padding-top: 5%;
-  }
 
   
   /* Navbar */
-  
-  .navbar{
-    padding: .8rem;
 
-  }
+
+  #logoTierras {
+    width: 70px;
+    margin-left: 500px;
+    margin-right: 500px;
+  
+}
+
+.pull-left{
+    margin: 20px 20px 0px 30px;
+}
+
+
+
+.pull-right {
+  margin: 20px 20px 0px 30px;
+}
   
   .navbar a span{
     font-size: .9em !important;
   }
   
   .navbar-nav li{
-    padding-right: 20px;
+    padding-right: 0px;
   }
   
   .nav-link {
     font-size: .9em !important;
   }
   
+
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+   
+  }
+  
+    .navbar-nav > li {
+      float: none;
+      display: inline-block;
+ }
+
+
+
   /* Slider */
 
   .carousel-inner{
@@ -153,10 +175,6 @@ html, body {
     width: 30%;
 }
 
- .panel-body {
-  padding: 25px;
-}
-  
   /* Icons */
   
   .fa-user-circle, .fa-calendar, .fa-check-circle, .fa-envelope-square{
@@ -229,7 +247,54 @@ html, body {
   /* RESPONSIVE */
   
   /*---Media Queries --*/
+
+  /*
+  
+        Large (lg) dispositivos: escritorioPC, 992px and up)
+  
+  
+  */
+
+@media (max-width: 1900px){
+
+
+    /* Navbar notebook */
+
+  #logoTierras {
+    width: 70px;
+    margin: 0px 200px 0px 240px;
+   
+   /*
+    background-color: #00aced;
+
+    */
+}
+
+.pull-left{
+    margin: 20px 20px 0px 20px;
+}
+
+
+.pull-right {
+    margin: 20px 0px 0px 20px;
+}
+
+.pull-right .nav-link{
+  margin: 0px 0px 0px 50px;
+}
+
+
+}
+
+
   @media (max-width: 992px) {
+
+    /* Navbar */
+
+    
+
+
+
     .active .carousel-caption {
       padding-top: 10%;
   }
@@ -238,13 +303,31 @@ html, body {
       padding: 2rem;
       }
   }
+
+
+  /*
+  
+          Medium (md) dispositivos: tablets, 768px and up)
+  
+  
+  */
+
   @media (max-width: 768px) {
 
+        /* Navbar */
 
-       .carousel-caption {
-       
-       
-       
+        #logoTierras {
+          width: 80px;
+          margin: 0px 250px 0px 250px;
+             
+      }
+      
+      .pull-left{
+          margin: 10px 15px 0px 15px;
+      }
+      
+      .pull-right {
+          margin: 10px 5px 0px 5px;
       }
   
       .carousel-caption h1 {
@@ -275,18 +358,23 @@ html, body {
       }
   
   }
+   /*
+            Small (sm) dispositivos: phone landscape, 576px and up)
+   */
+  
+
   @media (max-width: 576px) {
 
   #logoTierras{
-    width: 10%;
+    width: 60px;
   }
 
   .navbar span{
-    font-size: 50%;
+    
   }
   
-  #slider{
-    
+  .slider{
+    height: 50%; 
   }
     /* SignUp*/
 
@@ -367,7 +455,8 @@ html, body {
     height: 100%;
   }
   #fixed {
-    background-image: url('img/mac.png');
+    background-image: url('/img/backgroundLR3.png');
+    background-color:rgb(255,0,0);opacity:0.5;
     position: fixed;
     display: block;
     top: 0;
