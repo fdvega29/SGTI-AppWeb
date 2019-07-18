@@ -16,7 +16,7 @@ html, body {
   #container{
     background-image: url('/img/pattern/pattern1.png') !important;
     background-repeat: repeat;
-    padding-top: 8%;
+    padding-top: 100px;
   }
   
   .panel-heading{
