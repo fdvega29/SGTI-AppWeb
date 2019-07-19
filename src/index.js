@@ -11,6 +11,7 @@ const passport = require('passport');
 const app = express();
 //El archivo de la base de datos
 require('./database');
+require('./models/Users');
 
 //Configuraciones
     //Configuraciondo el puerto
