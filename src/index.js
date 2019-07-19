@@ -1,7 +1,12 @@
 //Requerimos los paquetes necesarios
 const express = require ('express');
 const path = require('path');
+const methodOverride = require('method-override');
 const exphbs = require('express-handlebars');
+const expSession = require('express-session');
+const flash = require('connect-flash');
+const passport = require('passport');
+
 // Inicializar servidor
 const app = express();
 //El archivo de la base de datos
@@ -22,9 +27,27 @@ app.set('port',process.env.PORT || 3000);
     }));
     app.set('view engine', '.hbs');
 
+//Middlewares funcion que se ejecuta antes de una accion/operacion
+app.use(express.urlencoded({extended: false}));
+app.use(methodOverride('_method'));
+app.use(expSession({
+    secret: 'app-secret',
+    resave: true,
+    saveUninitialized: true
+}));
+app.use(passport.initialize());
+app.use(passport.session());
+app.use(flash());    
+
 
 //Varibles Globales
-
+app.use((req, res, next) =>{
+    res.locals.success_msg = req.flash('success_msg');
+    res.locals.error_msg = req.flash('error_msg');
+    res.locals.error = req.flash('error');
+    res.locals.user = req.user || null;
+    next();
+});
 
 
 //routes
@@ -33,12 +56,7 @@ app.use(require('./routes/users'));
 
 //Archivos estaticos
 app.use(express.static(path.join(__dirname, 'public')));
-//Bootstrap/jquery/popper/img
-/*
-app.use('/css', express.static('css'));
-app.use('/js', express.static('js'));
-app.use('/img', express.static('img'));
-*/
+
 //Servidor escuchando
 app.listen(app.get('port'),()=>{
     //Mostrar por consola el puerto 
