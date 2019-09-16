@@ -5,6 +5,8 @@
 html, body {
     height: 100%;
     width: 100%;
+    padding: 0;
+    margin: 0;
     font-family: 'Quicksand', sans-serif;
     color: #222;
   }
@@ -14,9 +16,11 @@ html, body {
   /* Panel */
   
   #container{
-    background-image: url('/img/pattern/pattern1.png') !important;
-    background-repeat: repeat;
-    padding-top: 100px;
+    background: #a73737;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7a2828, #a73737);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7a2828, #a73737); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    padding-top: 250px;
+    padding-bottom: 240px;
   }
   
   .panel-heading{
@@ -51,15 +55,12 @@ html, body {
 
   #logoTierras {
     width: 70px;
-    margin-left: 400px;
-    margin-right: 400px;
-  
+    margin-left: 70px;
 }
 
-.pull-left{
-    margin: 20px 20px 0px 30px;
+.spanLogo{
+  font-size: 18px;
 }
-
 
 
 .pull-right {
@@ -81,15 +82,34 @@ html, body {
 
   .navbar-nav {
     width: 100%;
-  
-   
-  }
+}
   
     .navbar-nav > li {
-      float: none;
+      float: right;
       display: inline-block;
  }
 
+
+  #container-form{
+    padding-top: 100px;
+    padding-right: 10%;
+    padding-left: 10%;
+    background: rgb(196, 196, 196);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+  }
+
+  #container-welcome{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    padding-top: 230px;
+    padding-bottom: 250px;
+    background: #a73737;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7a2828, #a73737);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7a2828, #a73737); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+  }
 
 
   /* Slider */
@@ -125,6 +145,16 @@ html, body {
     text-shadow: 1px 1px 10px #000;
     padding-bottom: 1rem;
   }
+
+  #aIniciarS {
+    text-decoration: none;
+    color: #85adad;
+  }
+
+  #aRegistrar {
+    text-decoration: none;
+    color: #ffff;
+  }
   
   .btn-primary{
     background-color: #c55038;
@@ -139,15 +169,25 @@ html, body {
   .jumbotron{
     padding: 1rem;
     border-radius: 0;
+    color: white;
+    background: #606c88;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3f4c6b, #606c88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
   
   
   /* Cards */
   
-  div .card:hover{
+  /*div .card:hover{
     background-color: #D4C1A7;
     color: green;
-  }
+  }*/
+
+  .card-header {
+    background: #606c88;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3f4c6b, #606c88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
   
   
   .padding {
@@ -205,7 +245,7 @@ html, body {
   
   
   .fa-instagram {
-    color: #444;
+    color: #fff;
   }
   
   
@@ -225,8 +265,10 @@ html, body {
   /* Footer */
   
   footer{
-    background-color: #e9ecef;
-    color: #444;
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
     padding-top: 2rem;
     
   }
@@ -267,33 +309,37 @@ html, body {
     /* Navbar notebook */
 
   #logoTierras {
-    width: 60px;
-    margin-left: 200px;
-    margin-right: 200px;
+    width: 70px;
+    margin-left: 40px;
    
    /*
     background-color: #00aced;
 
     */
   }
+/*  
 .pull-left{
     margin: 10px 20px 0px 20px;
-}
+}*/
 
 
 .pull-right {
     margin: 10px 0px 0px 20px;
 }
 
-      /* SignUp*/
+
+
+      /* SignIN*/
 
 #avatar {
       padding-top: 0px;
       width: 20%;
  }
-    
-    
 
+ #cardLogin {
+    margin-top: 15%;
+ }
+    
 }
 
 
@@ -328,9 +374,10 @@ html, body {
              
       }
       
+      /*
       .pull-left{
           margin: 10px 15px 0px 15px;
-      }
+      }*/
       
       .pull-right {
           margin: 10px 5px 0px 5px;

@@ -1,11 +1,77 @@
-<div id="container">
-
-<!--- Image Slider -->
-<div class="container-fluid padding col-xs-12 col-md-12" >
+<div class="container-fluid" id="container-welcome">
 	<div class="row">
+		<div class="col-md-12">
+			{{#if user}}
+			<h1 class="display-4 text-center">Bienvenido {{user.apeNom}}</h1>
+			<p class="lead text-center">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+			<div class="text-center">
+				<a href="/#about" class="btn btn-primary btn-lg">Gestiona tu tramite</a>
+			</div>
+			{{else}}
+			<div class="col-md-12">
+				<h3 class="display-4 text-center text-white">Sistema de Gestión de Tramite Inmueble</h3>
+				<h4 class="text-center text-white">Gestiona tus tramites del Registro de la propiedad Inmueble con solo registrarte</h4>
+				<div class="text-center mt-5 mb-5">
+					<button type="button" class="btn btn-primary btn-lg"><a href="/users/signup" id="aRegistrar">Registrarse</a></button>
+				</div>
+			</div>
+			{{/if}}
+		</div>
+	</div>
+</div>
 
-		<div class="container-fluid padding" >
-				<div id="slides" class="carousel slide" data-ride="carousel">
+<!--About-->
+<div class="container" id="about">
+	<div class="row welcome text-center">
+		<hr>
+		<div class="col-md-12">
+			<h3 class="display-4">¿Cómo funciona?</h3>
+		</div>
+		<hr>
+		<div class="col-md-12">
+			<p class="lead">Aplicación para la gestión de tramites le brinda al usuario, una interfaz simple y Incluye interfaz de Web y Mobile (Android e iOS).</p>
+		</div>
+	</div>
+				
+
+				<!--- Iconos interfaz -->
+	<div class="row text-center">
+		<div class="col-xs-12 col-sm-6 col-md-3 interfaz">
+			<i class="fa fa-user-circle"></i>
+			<h3>Registro</h3>
+			<p>Completa el formulario de registro con tu e-mail y contraseña.</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 interfaz">
+			<i class="fa fa-calendar"></i>
+			<h3>Tramite</h3>
+			<p>Selecciona el trámite que te interesa realizar.</p>
+		</div>
+		<div class="col-sm-12 col-sm-6 col-md-3 interfaz">
+			<i class="fa fa-check-circle"></i>
+			<h3>Confirmación</h3>
+			<p>Confirma tu operación ingresando los datos necesarios.</p>
+		</div>
+		<div class="col-sm-12 col-sm-6 col-md-3 interfaz">
+			<i class="fa fa-envelope-square"></i>
+			<h3>Recordatorio</h3>
+			<p>Recibirás una notificación cuando tu tramite esté listo para retirar.</p>
+		</div>
+	</div>
+	<hr class="my-4">
+</div>
+
+<figure>
+	<div class="fixed-wrap">
+		<div id="fixed">
+				
+		</div>			
+	</div>
+</figure>
+
+
+
+	<!--SLIDER
+		<div id="slides" class="carousel slide" data-ride="carousel">
 					<ul class="carousel-indicators">
 						<li data-target="#slides" data-slide-to="0"></li>
 						<li data-target="#slides" data-slide-to="1"></li>
@@ -16,8 +82,8 @@
 							<div class="carousel-caption">
 								<h3 class="display-4">Sistema de Gestión de Tramite Inmueble</h3>
 								<h4>Gestiona tus tramites del Registro de la propiedad Inmueble con solo registrarte</h4>
-								<button type="button" class="btn btn-outline-light btn-lg">Iniciar sesión</button>
-								<button type="button" class="btn btn-primary btn-lg">Registrarse</button>
+								<button type="button" class="btn btn-outline-light btn-lg"><a href="/users/signin" id="aIniciarS">Iniciar sesión</a></button>
+								<button type="button" class="btn btn-primary btn-lg"><a href="/users/signup" id="aRegistrar">Registrarse</a></button>
 							</div>
 						</div>
 						<div class="carousel-item">
@@ -31,9 +97,4 @@
 						</div>
 					</div>
 				</div>
-			</div>
 
-</div>
-</div>
-
-</div>

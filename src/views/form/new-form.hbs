@@ -1,0 +1,80 @@
+<div class="container-fluid pb-4" id="container-form">
+    <div class="card">
+        <div class="card-header">
+            <h2 class="text-center text-uppercase text-white">Complete el formulario</h2>
+        </div>
+        <div class="card-body">
+            <form action="">
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label for="apeTitu">Ingrese apellido/s.</label>
+                        <input type="text" class="form-control" name="apeTit" id="apeTit" onkeyup="validateInput('apeTit');" placeholder="Apellido">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="nomTitu">Ingrese nombre/s.</label>
+                        <input type="text" class="form-control" name="nomTitu" id="nomTitu" placeholder="Apellido">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="apeConyu">Ingrese apellido/s conyuge.</label>
+                        <input type="text" class="form-control" name="apeConyu" id="apeConyu" placeholder="Nombre">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="nomConyu">Ingrese nombre/s conyuge.</label>
+                        <input type="text" class="form-control" name="nomConyu" id="nomConyu" placeholder="Nombre">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="fechNac">Seleccion fecha de nacimiento.</label>
+                        <input type="date" class="form-control" name="fechNac" id="fechNac">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="nacionalidad">Ingrese nacionalidad.</label>
+                        <input type="text" class="form-control" name="nacionalidad" id="nacionalidad" placeholder="Nacionalidad">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="estCivil">Seleccione.</label>
+                        <select class="custom-select mr-sm-2" name="estCivil" id="estCivil">
+                            <option selected>Estado Civil</option>
+                            <option value="1">Soltero</option>
+                            <option value="2">Casado</option>
+                            <option value="3">Viudo</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="nupcias">Ingrese nupcias.</label>
+                        <input type="text" class="form-control" name="nupcias" id="nupcias" placeholder="Nupcias">
+                    </div>
+                    <div class="col-md-12 form-group">
+                      <h5 class="text-center">L.E L.C D.N.I (Unicamente para Argentinos Nativos o Naturalizados)</h5>
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="extrg">Extranjeros.</label>
+                        <input type="text" class="form-control" name="extrg" id="extrg" placeholder="C.I N°">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="poli">Policia.</label>
+                        <input type="text" class="form-control" name="poli" id="poli" placeholder="Policia">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="pasaporte">Ingrese Pasaporte.</label>
+                        <input type="number" class="form-control" name="pasaporte" id="pasaporte" placeholder="Numero">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="pais">Ingrese pais.</label>
+                        <input type="text" class="form-control" name="pais" id="pais" placeholder="Pais">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="domicilio">Ingrese domicilio.</label>
+                        <input type="text" class="form-control" name="domicilio" id="domicilio" placeholder="Domicilio">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="">Ins. Reg. Pub. Com.</label>
+                        <input type="text" class="form-control" name="irpc" id="irpc">
+                    </div>
+                    <div class="col-md-12 pl-5 pr-5">
+                        <button class="btn btn-success btn-lg btn-block">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
