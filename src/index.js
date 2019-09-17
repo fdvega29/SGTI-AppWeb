@@ -9,7 +9,7 @@ const passport = require('passport');
 
 // Inicializar servidor
 const app = express();
-require('./database'); //declaran el archivo database.js 
+require('./database'); 
 require('./config/passport');
 
 
